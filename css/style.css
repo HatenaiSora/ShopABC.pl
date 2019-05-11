@@ -2,12 +2,6 @@
     max-width: 1352px;
     margin: 0 auto;
 }
-.small-center {
-    max-width: 895px;
-    margin: 0 auto;
-}
-
-
 /*HEADER*/
 
 /*nav*/
@@ -103,7 +97,10 @@ li {
 /*SECTIONS*/
 
 /*section one*/
-.section-one > div {
+
+.section-one__center {
+    max-width: 895px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -118,11 +115,6 @@ li {
     font-size: 36px;
     line-height: 42px;
     color: #000000;
-}
-.section-one__numbers-element img {
-    display: block;
-    height: 52px;
-    width: 44px;
 }
 .section-one__numbers-element {
     display: flex;
@@ -197,14 +189,160 @@ li {
 }
 /* section two */
 
-.smaller-center {
+.section-two__center {
     max-width: 1124px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-
 .section-two {
     background-color: #F7F7F7;
     width: 100%;
+}
+.section-two h2 {
+    font-family: 'Realway', Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-top: 91px;
+    margin-bottom: 30px;
+    margin-left: 36px;
+}
+.element-one h2 {
+    margin: 91px 0 30px 36px;
+}
+.element-two h2 {
+    margin: 69px 110px 30px 0;
+}
+.element-three h2 {
+    margin: 69px 155px 30px 35px;
+}
+p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    position: relative;
+    padding-bottom: 50px;
+}
+.element-one p {
+    margin-left: 35px; 
+}
+.element-two p {
+    margin: 0 70px 71px 0;
+}
+.element-three p {
+    margin: 0 107px 70px 35px;
+}
+p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height:3px;
+    width: 260px;
+    bottom: 0;
+}
+.element-one p:after {
+    background-color: #FB3B64;
+}
+.element-two p:after {
+    background-color: #08A6E4;
+}
+.element-three p:after {
+    background-color: #55DFB4;
+}
+.section-two__offer {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+.section-two__offer:first-child {
+    margin-top: 105px;
+    justify-content: space-between;
+    height: 370px;
+}
+.section-two__offer:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.section-two__offer-divided {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 105px;
+}
+.section-two__offer-element {
+    width: 407px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.element-three {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    width: 623px;
+    height: 370px;
+    margin-right: 60px;
+}
+.section-two__offer:first-child .background-item {
+    position: relative;
+    height: 254px;
+    width: 254px;
+    margin: 38px 71px 77px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-two__offer:first-child .background-item__inner {
+    display: block;
+    height: 180px;
+    width: 180px;
+    border-radius: 41px;
+    background-color: #FB3B64;
+    transform: rotate(45deg);
+}
+.section-two__offer:nth-child(2) .background-item {
+    display: block;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background-color: #07ACE6;
+    margin: 12px 0 38px 70px;
+    position: relative;
+}
+.section-two__offer-divided .background-item {
+    display: block;
+    height: 370px;
+    width: 440px;
+    background-color: #55DFB4;
+    border: 1px solid #E8E9ED;
+    position: relative;
+}
+.section-two__offer:first-child .background-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 219px;
+    width: 386px;
+    background-image: url("../images/Macbook2.png");
+    bottom: -55px;
+    left: -160px;
+}
+.section-two__offer:nth-child(2) .background-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 426px;
+    height: 328px;
+    background-image: url("../images/iPhone2.png");
+    top: 17px;
+}
+.section-two__offer-divided .background-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 295px;
+    height: 206px;
+    background-image: url("../images/Trumpet.png");
+    background-size: contain;
+    bottom: 50px;
+    left: 50px;
 }
