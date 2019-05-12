@@ -666,6 +666,7 @@ button {
     box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
     margin-bottom: 106px;
     margin-left: 213px;
+    cursor: pointer;
 }
 
 /* footer */
