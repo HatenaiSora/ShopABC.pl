@@ -15,21 +15,21 @@
             <div class="center">
                 <span>shopabc.pl</span>
                 <ul>
-                    <li><a href="#">dlaczego my</a></li>
-                    <li><a href="#">korzyści</a></li>
-                    <li><a href="#">ceny</a></li>
-                    <li><a href="#">kontakt</a></li>
+                    <li><a href="#us">dlaczego my</a></li>
+                    <li><a href="#benefits">korzyści</a></li>
+                    <li><a href="#prices">ceny</a></li>
+                    <li><a href="#contact">kontakt</a></li>
                 </ul>
             </div>
         </nav>
         <div class="header__main">
             <h1>Sprzedawaj więcej!</h1>
             <h2>Otwarcie sklepu na naszej platformie, dramatycznie zwiększy twoją sprzedaż</h2>
-            <a>Otwórz swój sklep</a>
+            <a href="#">Otwórz swój sklep</a>
         </div>
     </header>
 
-    <section class="section-one">
+    <section id="us" class="section-one">
         <div class="section-one__center">
             <h2>Najpopularniejsza platforma sprzedażowa w kraju</h2>
             <div  class="section-one__numbers">
@@ -52,7 +52,7 @@
         </div>
     </section>
 
-    <section class="section-two">
+    <section id="benefits" class="section-two">
         <div class="section-two__center">
             <div class="section-two__offer">
                 <div class="section-two__offer-element element-one">
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
 
         <h2>Cennik</h2>
 
@@ -94,7 +94,7 @@
                 <li>2 Lata licencji</li>
                 <li>Pełne wsparcie</li>
             </ul>
-            <a>Rozpocznij</a>
+            <a href="#">Rozpocznij</a>
         </div>
 
         <div class="prices-professional">
@@ -108,7 +108,7 @@
                     <li>Rok licencji</li>
                     <li>Pełne wsparcie</li>
                 </ul>
-            <a>Rozpocznij</a>
+            <a href="#">Rozpocznij</a>
         </div>
 
         <div class="prices-premium">
@@ -122,12 +122,12 @@
                     <li>2 Lata licencji</li>
                     <li>Pełne wsparcie</li>
                 </ul>
-            <a>Rozpocznij</a>
+            <a href="#">Rozpocznij</a>
         </div>
 
     </section>
 
-    <section class="form">
+    <section class="form" id="contact">
 
         <div class="form__info">
 
@@ -143,23 +143,34 @@
 
         <div>
             <form>
-                <label> IMIĘ I NAZWISKO
-                    <input type="text" >
+                <label class="data">IMIĘ I NAZWISKO<br>
+                    <input type="text" name="name">
                 </label><br>
-                <label>EMAIL
-                    <input type="email" >
+                <label class="data">EMAIL<br>
+                    <input type="email" name="email">
                 </label><br>
-                <label> Wyrażam zgodę na przetwarzanie danych i kontakt.
-                    <input type="checkbox" >
-                </label>
-                <button>Wyślij</button>
+                <label class="check"> 
+                    <input type="checkbox" name="terms-and-conditions" value="terms-and-conditions" checked="checked">
+                    Wyrażam zgodę na przetwarzanie danych i kontakt.
+                    <span class="checkmark"></span>
+                </label><br>
+                <button type="submit" value="Wyślij">Wyślij</button>
             </form>
         </div>
 
     </section>
 
-
-
-    <footer></footer>
+    <footer>
+        <div class="center">
+            <div class="logo">
+                <span>shopabc.pl</span>
+                <span>&copy; 2019 Wszystkie prawa zastrzeżone</span>
+            </div>
+            <div class="social">
+                <a href="#"><img src="images/icons/Twitter.svg"></a>
+                <a href="#"><img src="images/icons/Facebook.svg"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

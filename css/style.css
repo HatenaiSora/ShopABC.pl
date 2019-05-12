@@ -37,7 +37,7 @@ nav a {
 nav a:hover:after {
     content: "";
     display: block;
-    width: 90%;
+    width: 100%;
     height: 4px;
     background-color: #08A6E4;
     position: absolute;
@@ -71,12 +71,11 @@ nav a:hover {
 }
 .header__main a {
     display: inline-block;
-    width: 440px;
-    height: 67px;
+    text-decoration: none;
     border-radius: 40px;
     background-color: #08A6E4;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
-    padding: 22px;
+    box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
+    padding: 22px 147px 23px 147px;
     text-align: center;
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 700;
@@ -276,6 +275,7 @@ p:after {
 .element-three {
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 623px;
     height: 370px;
@@ -349,7 +349,6 @@ p:after {
 /*section three*/
 .prices {
     width: 1266px;
-    height: 616px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -427,6 +426,7 @@ p:after {
 }
 .prices-basic a,
 .prices-premium a {
+    text-decoration: none;
     display: inline-block;
     width: 150px;
     height: 50px;
@@ -444,14 +444,16 @@ p:after {
 }
 .prices-professional a {
     display: inline-block;
+    text-decoration: none;
     height: 50px;
     width: 165px;
     background-color: #07ACE6;
     border-radius: 23px;
     color: #FFFFFF;
-    padding: 16px 48px;
+    padding: 16px 48px 16px 45px;
     position: absolute;
     bottom: -25px;
+    box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
 }
 .prices-basic,
 .prices-premium {
@@ -473,7 +475,6 @@ p:after {
     border: 1px solid #07ACE6;
     box-shadow: 5px 10px 27px hsla(195, 94%, 46%, 0.16);
     margin-top: 50px;
-    margin-bottom: 179px;
 }
 /* adding befores to the list */
 
@@ -483,15 +484,40 @@ p:after {
     width: 10px;
     height: 21px;
     position: absolute;
-    background-color: #13253B;
+    top: -10px;
 }
+
 .prices-list li:first-child:before {
     background-image: url("../images/icons/Checkmark.svg"); 
     left: -20px;
-    top: -5px;
+}
+.prices-list li:nth-child(2):before {
+    background-image: url(../images/icons/Checkmark.svg);
+    left: 25px;
+}
+.prices-list li:nth-child(3):before {
+    background-image: url(../images/icons/Checkmark.svg);
+    left: 22px;
+}
+.prices-list li:nth-child(4):before {
+    left: 27px;
+}
+.prices-list li:last-child:before {
+    left: 25px;
+}
+.prices-professional li:nth-child(4):before,
+.prices-premium li:nth-child(4):before,
+.prices-premium li:last-child:before {
+    background-image: url(../images/icons/Checkmark.svg);
 }
 
-/* zostawiam na potem wróć tu!!!!! */
+.prices-basic li:nth-child(4):before,
+.prices-basic li:last-child:before,
+.prices-professional li:last-child:before {
+    background-image: url(../images/icons/Close.svg);
+}
+
+/* icons not displaying properly */
 
 
 /*form */
@@ -509,17 +535,18 @@ p:after {
     color: #000000;
     line-height: 57px;
 }
+.form__info {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
 .form__info > span {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 16px;
     color: #000000;
     line-height: 22px;
     margin-top: 22px;
-}
-.form div:first-child {
-    width: 365px;
-    display: flex;
-    flex-direction: column;
+    flex-basis: 100%;
 }
 .form form {
     margin-top: 182px;
@@ -529,7 +556,148 @@ p:after {
     display: flex;
     width: 365px;
     margin-top: 40px;
+    justify-content: center;
 }
 .info .email {
     margin-right: 69px;
+}
+.info span {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600px;
+    color: #A5A5A5;
+    margin-bottom: 273px;
+    position: relative;
+}
+.info span:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: -35px;
+    top: -5px;
+}
+.info .email:before {
+    background-image: url(../images/icons/Mail\ Icon.svg);
+}
+.info .phone:before {
+    background-image: url(../images/icons/Phone\ Icon.svg);
+}
+/*form styling*/
+label[class="data"] {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #08A6E4;
+}
+input[type="text"],
+input[type="email"] {
+    outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #A5A5A5;
+	background: transparent;
+	margin-bottom: 30px;
+}
+label[class="check"] {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 12px;
+    color: #707070;
+    position: relative;
+}
+
+/* checkbox styling */
+
+input[type="checkbox"] {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin-right: 30px;
+    margin-bottom: 59px;
+    position: relative;
+}
+.checkmark {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+.check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-image: url(../images/icons/Checkmark-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 25px;
+    left: 4px;
+    top: -5px;
+}
+input[type="checkbox"]:checked + .checkmark:after{
+   display: block;
+}
+/* checkbox styling - end */
+
+button {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 20px 94px 19px 94px;
+    background-color: #08A6E4;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
+    margin-bottom: 106px;
+    margin-left: 213px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    box-shadow: 00px -5px 40px hsla(0, 0%, 0%, 0.16);
+}
+footer > div {
+    display: flex;
+    justify-content: space-between;
+}
+footer .logo {
+    display: flex;
+    flex-direction: column;
+}
+footer .logo span:first-child {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: #08A6E4;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+footer .logo span:last-child {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    color: #A5A5A5;
+    margin-bottom: 17px;
+}
+footer .social a:last-child {
+    margin-left: 25px;
+}
+footer .social img {
+    width: 24px;
+    height: 24px;
+    margin-top: 33px;
+    margin-bottom: 30px;
 }
