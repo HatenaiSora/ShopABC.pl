@@ -488,37 +488,39 @@ p:after {
     width: 10px;
     height: 21px;
     position: absolute;
-    top: -10px;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .prices-list li:first-child:before {
-    background-image: url("../images/icons/Checkmark.svg"); 
+    background-image: url(../images/icons/checkmark.svg); 
     left: -20px;
 }
 .prices-list li:nth-child(2):before {
-    background-image: url(../images/icons/Checkmark.svg);
+    background-image: url(../images/icons/checkmark.svg);
     left: 25px;
 }
 .prices-list li:nth-child(3):before {
-    background-image: url(../images/icons/Checkmark.svg);
-    left: 22px;
+    background-image: url(../images/icons/checkmark.svg);
+    left: 20px;
 }
 .prices-list li:nth-child(4):before {
-    left: 27px;
+    left: 25px;
 }
 .prices-list li:last-child:before {
-    left: 25px;
+    left: 20px;
 }
 .prices-professional li:nth-child(4):before,
 .prices-premium li:nth-child(4):before,
 .prices-premium li:last-child:before {
-    background-image: url(../images/icons/Checkmark.svg);
+    background-image: url(../images/icons/checkmark.svg);
 }
 
 .prices-basic li:nth-child(4):before,
 .prices-basic li:last-child:before,
 .prices-professional li:last-child:before {
-    background-image: url(../images/icons/Close.svg);
+    background-image: url(../images/icons/close.svg);
 }
 
 /* icons not displaying properly */
