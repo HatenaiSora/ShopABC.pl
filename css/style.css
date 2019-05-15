@@ -649,12 +649,12 @@ input[type="checkbox"] {
     position: absolute;
     display: none;
     background-image: url(../images/icons/Checkmark-1.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 14px;
     height: 25px;
     left: 4px;
-    top: -5px;
+    top: 5px;
 }
 input[type="checkbox"]:checked + .checkmark:after{
    display: block;
