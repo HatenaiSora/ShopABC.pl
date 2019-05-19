@@ -127,6 +127,75 @@
 
     </section>
 
+    <section class="calculator">
+
+        <h2>Oblicz ile zapłacisz</h2>
+        <div class="calculator_center">
+            <form class="calculator_form">
+                <input id="products-number" type="number" name="products-number" placeholder="Ilość produktów">
+                <input id="orders-number" type="number" name="orders-number" placeholder="Szacowana ilość zamówień w miesiącu">
+                <!-- <select>
+                    <option selected disabled value="" hidden>Wybierz pakiet</option>
+                    <option value="basic">Podstawowy</option>
+                    <option value="professional">Profesjonalny</option>
+                    <option value="premium">Premium</option>
+                </select> -->
+                <ul class="calculator_form--out">
+                    <li id="placeholder">Wybierz pakiet</li>
+                    <ul class="calculator_form--in hidden">
+                        <li>Podstawowy</li>
+                        <li>Profesjonalny</li>
+                        <li>Premium</li>
+                    </ul>
+                </ul>
+                <label class="check">
+                    <input type="checkbox" name="accountant" value="accountant">Obsługa księgowa
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="credit-card" value="credit-card">Wynajem terminala płatniczeniego
+                    <span class="checkmark"></span>
+                </label>
+            </form>
+            <div class="calculator-prices">
+
+                <div class="calculator-prices__element hidden">
+                    <span>Produkty</span>
+                    <span id="products-price-claculation"></span>
+                    <span id="products-sum"></span>
+                </div>
+
+                <div class="calculator-prices__element hidden">
+                    <span>Zamówienia</span>
+                    <span id="orders-price-calculation"></span>
+                    <span id="orders-sum"></span>
+                </div>
+
+                <div class="calculator-prices__element hidden">
+                    <span>Pakiet</span>
+                    <span id="bundle"></span>
+                    <span id="bundle-price"></span>
+                </div>
+
+                <div class="calculator-prices__element hidden">
+                    <span>Ksiegowość</span>
+                    <span>$35</span>
+                </div>
+
+                <div class="calculator-prices__element hidden">
+                    <span>Terminal</span>
+                    <span>$5</span>
+                </div>
+
+                <div class="sum">
+                    <span>Suma</span>
+                    <span id="total-sum">$0</span>
+                </div>
+                
+            </div>
+    
+    </section>
+
     <section class="form" id="contact">
 
         <div class="form__info">
@@ -150,7 +219,7 @@
                     <input type="email" name="email">
                 </label>
                 <label class="check"> 
-                    <input type="checkbox" name="terms-and-conditions" value="terms-and-conditions" checked="checked">
+                    <input type="checkbox" name="terms-and-conditions" value="terms-and-conditions" checked>
                     Wyrażam zgodę na przetwarzanie danych i kontakt.
                     <span class="checkmark"></span>
                 </label>
@@ -173,4 +242,5 @@
         </div>
     </footer>
 </body>
+<script src="js/app.js"></script>
 </html>

@@ -527,8 +527,160 @@ p:after {
 .prices-professional li:last-child:before {
     background-image: url(../images/icons/close.svg);
 }
+/*kalkulator*/
+.calculator {
+    background-color: #F7F7F7;
+    width: 100%;
+    margin-top: 87px;
+}
+.calculator h2 {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 36px;
+    color: #000000;
+    line-height: 42px;
+    padding-top: 87px;
+    margin-bottom: 52px;
+    text-align: center;
+}
+.calculator_center {
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.calculator_center form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+input[type="number"],
+.calculator_form--out
+/* .calculator_form select{ */
+    {
+    height: 40px;
+    width: 440px;
+    border: 1px solid #08A6E4;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px hsla(196, 93%, 46%, 0.16);
+    margin-bottom: 23px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 20px;
+}
+input[type="number"] {
+    color: #A5A5A5;
+}
+.calculator_form--out{
+    background-image: url("../images/icons/Arrow\ Down.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 20px 20px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+#placeholder {
+    padding-top: 11px;
+    color: #A5A5A5;
+}
+.calculator_form--in {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 440px;
+    border: 1px solid #EB476E;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px hsla(345, 80%, 60%, 0.16);
+    top: 50px;
+    left: -1px;
+    z-index: 1;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    line-height: 18px;
+}
+.calculator_form--in li {
+    padding: 11px 0px 10px 20px;
+}
+.calculator_form--in li:hover {
+    background-color: #ccc;
+}
 
-/* icons not displaying properly */
+/* select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../images/icons/Arrow\ Down.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 20px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 18px;
+}
+option {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    padding-left: 20px;
+    margin-bottom: 15px;
+} */
+
+.calculator-prices {
+    flex-basis: 50%;
+}
+.calculator input[name="accountant"] {
+    margin-bottom: 24px;
+}
+.calculator input[name="credit-card"]:last-of-type {
+    margin-bottom: 109px;
+}
+.calculator-prices {
+    display: flex;
+    flex-direction: column;
+}
+.calculator-prices__element {
+    display: flex;
+    justify-content: space-between;
+    background-color: #55DFB4;
+    box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.16);
+    border-radius: 6px;
+    padding: 6px 20px 6px 20px;
+    color: #FFFFFF;
+    margin-bottom:8px;
+    margin-left: 44px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+.calculator-prices__element span:last-child {
+    font-size: 18px;
+    line-height: 24px;
+}
+.sum {
+    background-color: #08A6E4;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.16);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #FFFFFF;
+    margin-top: 22px;
+    padding: 10px 19px 10px 15px;
+    width: 178px;
+    align-self: flex-end;
+    display: flex;
+    justify-items: space-between;
+}
+.sum span:first-child {
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 50px;
+}
+.sum span:last-child {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.hidden {
+    visibility: hidden;
+}
+
 
 
 /*form */
@@ -628,8 +780,10 @@ input[type="checkbox"] {
     height: 0;
     width: 0;
     margin-right: 30px;
-    margin-bottom: 59px;
     position: relative;
+}
+.form input[type="checkbox"] {
+    margin-bottom: 59px;
 }
 .checkmark {
     position: absolute;
@@ -651,8 +805,8 @@ input[type="checkbox"] {
     background-image: url(../images/icons/Checkmark-1.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    height: 13px;
     width: 14px;
-    height: 25px;
     left: 4px;
     top: 5px;
 }
