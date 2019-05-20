@@ -14,7 +14,7 @@ let updateSum = function() {
     document.getElementById("total-sum").innerText = "$" + sum;
 };
 
-productsInput.addEventListener("keyup",function(){
+productsInput.addEventListener("input",function(){
     productsPrice.children[1].innerText = (+productsInput.value).toFixed() + " * $0.5";
     productsPrice.children[2].innerText = "$ " + (productsInput.value*0.5).toFixed(2);
     productsPrice.classList.remove("hidden");
@@ -27,7 +27,7 @@ productsInput.addEventListener("keyup",function(){
     updateSum();
 });
 
-ordersInput.addEventListener("keyup",function(){
+ordersInput.addEventListener("input",function(){
     ordersPrice.children[1].innerText = (+ordersInput.value).toFixed(2) + " * $0.25";
     ordersPrice.children[2].innerText = "$ " + (ordersInput.value*0.25).toFixed(2);
     ordersPrice.classList.remove("hidden");
