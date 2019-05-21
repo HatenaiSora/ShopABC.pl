@@ -363,6 +363,8 @@ p:after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
     margin: 0 auto;
 }
 .prices h2 {
@@ -393,7 +395,7 @@ p:after {
 .prices div span:first-of-type {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 46px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 64px;
 }
 .prices-basic span:first-of-type {
@@ -479,11 +481,12 @@ p:after {
     border: 1px solid #55DFB4;
 }
 .prices-professional {
-    width:405px;
+    width: 405px;
     border-radius: 18px;
     border: 1px solid #07ACE6;
     box-shadow: 5px 10px 27px hsla(195, 94%, 46%, 0.16);
     margin-top: 50px;
+    padding-bottom: 25px;
 }
 /* adding befores to the list */
 
@@ -616,6 +619,7 @@ input[type="number"] {
 .calculator-prices {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .calculator-prices__element {
     display: flex;
@@ -646,7 +650,8 @@ input[type="number"] {
     width: 178px;
     align-self: flex-end;
     display: flex;
-    justify-items: space-between;
+    position: absolute;
+    bottom: 70px;
 }
 .sum span:first-child {
     font-size: 14px;
@@ -658,7 +663,7 @@ input[type="number"] {
     margin-right: 15px;
 }
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 

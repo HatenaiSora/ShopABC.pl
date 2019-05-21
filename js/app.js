@@ -15,6 +15,8 @@ let updateSum = function() {
 };
 
 productsInput.addEventListener("input",function(){
+    productsInput.style.color = "black";
+
     productsPrice.children[1].innerText = (+productsInput.value).toFixed() + " * $0.5";
     productsPrice.children[2].innerText = "$ " + (productsInput.value*0.5).toFixed(2);
     productsPrice.classList.remove("hidden");
@@ -28,6 +30,8 @@ productsInput.addEventListener("input",function(){
 });
 
 ordersInput.addEventListener("input",function(){
+    ordersInput.style.color = "black";
+    
     ordersPrice.children[1].innerText = (+ordersInput.value).toFixed(2) + " * $0.25";
     ordersPrice.children[2].innerText = "$ " + (ordersInput.value*0.25).toFixed(2);
     ordersPrice.classList.remove("hidden");
