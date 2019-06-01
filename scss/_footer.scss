@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    box-shadow: 00px -5px 40px hsla(0, 0%, 0%, 0.16);
+
+    .center {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 328px;
+        margin: 0 auto;
+        @media screen and (min-width:678px) {
+            max-width: 1352px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                &:first-child {
+                    font-family: 'Raleway', Helvetica, sans-serif;
+                    font-size: 26px;
+                    line-height: 30px;
+                    color: #08A6E4;
+                    margin-top: 18px;
+                    margin-bottom: 6px;
+                }
+
+                &:last-child {
+                    font-family: 'Open Sans', Helvetica, sans-serif;
+                    font-size: 11px;
+                    line-height: 15px;
+                    color: #A5A5A5;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+
+        .social {
+            a:last-child {
+                margin-left: 25px;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-top: 33px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

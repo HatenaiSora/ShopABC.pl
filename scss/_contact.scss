@@ -1,0 +1,153 @@
+.form {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        min-width: 896px;
+    }
+
+    h2 {
+        margin-top: 60px;
+        font-family: 'Raleway', Helvetica, sans-serif;
+        font-size: 40px;
+        color: #000000;
+        line-height: 47px;
+
+        @media screen and (min-width:1025px) {
+            margin-top: 179px;
+            font-size: 49px;
+            line-height: 57px;
+        }
+    }
+
+    .form__info {
+        width: 312px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @media screen and (min-width:678px) {
+            width: 370px;
+        }
+
+        >span {
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            font-size: 16px;
+            color: #000000;
+            line-height: 22px;
+            margin-top: 22px;
+            flex-basis: 100%;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            width: 249px;
+            margin: 0 auto;
+            margin-top: 30px;
+            justify-content: center;
+
+            @media screen and (min-width:678px) {
+                flex-direction: row;
+                width: 365px;
+                margin: 40px 0 0 0;
+            }
+
+            .email {
+                margin-right: 69px;
+
+                &:before {
+                    background-image: url("../images/icons/Mail\ Icon.svg");
+                }
+            }
+
+            .phone:before {
+                background-image: url("../images/icons/Phone\ Icon.svg");
+            }
+
+            span {
+                font-family: 'Open Sans', Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 600px;
+                color: #A5A5A5;
+                margin-bottom: 20px;
+                position: relative;
+
+                @media screen and (min-width:1025px) {
+                    margin-bottom: 273px;
+                }
+
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 27px;
+                    height: 27px;
+                    position: absolute;
+                    left: -35px;
+                    top: -5px;
+                }
+            }
+        }
+
+    }
+
+    form {
+        max-width: 320px;
+        margin: 30px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:1025px) {
+            margin: 182px 0 0 0;
+            max-width: 440px;
+            display: block;
+
+        }
+
+        label[class="data"] {
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            color: #08A6E4;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #A5A5A5;
+            background: transparent;
+            margin-bottom: 30px;
+        }
+
+        button {
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 18px;
+            color: #FFFFFF;
+            padding: 20px 94px 19px 94px;
+            background-color: #08A6E4;
+            border-radius: 35px;
+            border: none;
+            box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
+            margin-bottom: 50px;
+            align-self: flex-end;
+
+
+            @media screen and (min-width:678px) {
+                cursor: pointer;
+                margin-left: 213px;
+                margin-bottom: 106px;
+            }
+        }
+    }
+}

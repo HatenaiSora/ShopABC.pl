@@ -1,0 +1,29 @@
+{
+  "name": "WRO_FER_S_18_Game_of_life",
+  "version": "1.0.0",
+  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HatenaiSora/WRO_FER_S_18_Game_of_life.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HatenaiSora/WRO_FER_S_18_Game_of_life/issues"
+  },
+  "homepage": "https://github.com/HatenaiSora/WRO_FER_S_18_Game_of_life#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}

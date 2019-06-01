@@ -1,3 +1,27 @@
+
+
+//hamburger
+let hamburgerButton = document.getElementById("hamburger");
+let mainMenu = document.getElementById("main-menu");
+let nav = document.getElementById("nav");
+
+hamburgerButton.addEventListener("click",function(){
+let menuButton = hamburgerButton.querySelector("i");
+
+    if (menuButton.classList == "fas fa-bars") {
+        mainMenu.style.display = "flex";
+        hamburgerButton.querySelector("i").classList.remove("fa-bars");
+        hamburgerButton.querySelector("i").classList.add("fa-times");
+    }else if (menuButton.classList == "fas fa-times") {
+        mainMenu.style.display = "none";
+        hamburgerButton.querySelector("i").classList.remove("fa-times");
+        hamburgerButton.querySelector("i").classList.add("fa-bars");
+    }
+
+});
+
+
+// Calculator
 let productsInput = document.getElementById("products-number");
 let ordersInput = document.getElementById("orders-number");
 let productsPrice = document.querySelector(".calculator-prices").firstElementChild;

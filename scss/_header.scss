@@ -1,0 +1,236 @@
+nav {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__nav--logo {
+        width: 100%;
+        padding: 16px 20px 17px 20px;
+        display: flex;
+        box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.16);
+        background-color: white;
+        z-index: 3;
+        justify-content: space-between;
+
+        @media screen and (min-width:1024px) {
+            max-width: 100%;
+            width: auto;
+            z-index: 1;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .logo {
+            font-family: Raleway, Helvetica, sans-serif;
+            color: #08A6E4;
+            font-weight: 300;
+            font-size: 32px;
+            display: block;
+            @media screen and (min-width:1024px) {
+                margin: 16px 0 17px 0;
+            }
+        }
+
+        .hamburger {
+            display: block;
+            height: 12px;
+            width: 25px;
+
+            i {
+                font-size: 20px;
+                display: block;
+                height: 12px;
+                width: 25px;
+                color: #07ACE6;
+                margin-top: 7px;
+            }
+
+            @media screen and (min-width:1024px) {
+                display: none;
+            }
+        }
+    }
+
+    .header__nav--menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.16);
+        position: absolute;
+        top: 64px;
+        background-color: white;
+        z-index: 2;
+
+        @media screen and (min-width:1024px) {
+ 
+            display: block;
+            width: auto;
+            position: static;
+            box-shadow: none;
+            
+        }
+        ul {
+            @media screen and (min-width:1024px){
+            display: block;
+            flex-direction: row; 
+            height: 70px;
+            }
+
+        }
+
+        li {
+            &:first-child {
+                margin-top: 30px;
+                @media screen and (min-width:1024px) {
+                    margin: 0;
+                }
+            }
+
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 34px;
+                @media screen and (min-width:1024px) {
+                    margin:0;
+                }
+            }
+
+            @media screen and (min-width:1024px) {
+                padding-top: 27px;
+                padding-bottom: 27px;
+                float: left;
+            }
+
+            a {
+                text-decoration: none;
+                margin-left: 25px;
+                text-transform: uppercase;
+                color: #A5A5A5;
+                font-family: 'Open Sans', Helvetica, sans-serif;
+                font-size: 11px;
+
+                @media screen and (min-width:1024px) {
+                    position: relative;
+                    margin-left: 100px;
+                    padding-top: 27px;
+                    padding-bottom: 27px;
+                }
+
+                &:active {
+                    color: #000000;
+                    font-weight: 700;
+                }
+
+                @media screen and (min-width:1024px) {
+                    &:hover {
+                        color: #000000;
+                        font-weight: 700;
+
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 4px;
+                            background-color: #08A6E4;
+                            position: absolute;
+                            bottom: 0px;
+                            right: 0px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.shadow {
+    display: none;
+    @media screen and (min-width:1024px) {
+        display: block;
+        width: 100%;
+        height: 4px;
+        box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.16);
+    }
+}
+
+.header__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width:1024px) {
+        background-image: url("../images/Background.png");
+        background-repeat: no-repeat;
+        background-position: center bottom -100px;
+        background-size: contain;
+    }
+
+    h1 {
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 35px;
+        line-height: 41px;
+        color: #000000;
+        margin-top: 100px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:1024px) {
+            font-size: 49px;
+            margin-top: 130px;
+            line-height: 57px;
+        }
+    }
+
+    h2 {
+        color: #000000;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 28px;
+
+        @media screen and (min-width:1024px) {
+            margin-bottom: 38px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 40px;
+        background-color: #08A6E4;
+        box-shadow: 5px 10px 14px hsla(195, 94%, 46%, 0.16);
+        padding: 22px 82px 23px 82px;
+        text-align: center;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-bottom: 51px;
+
+        @media screen and (min-width:1024px) {
+            margin-bottom: 508px;
+            padding: 22px 147px 23px 147px;
+        }
+    }
+    .header__main--image {
+        width: 100vw;
+        height: 250px;
+        background-image: url("../images/Background.png");
+        background-size: cover;
+        background-position: center bottom -33px;
+        @media screen and (min-width:1024px) {
+            display: none;
+        }
+    }
+}
