@@ -20,6 +20,10 @@ let menuButton = hamburgerButton.querySelector("i");
 
 });
 
+// prices scroll
+
+let pricesScroll = document.getElementById("prices_scroll");
+pricesScroll.scrollLeft = 219;
 
 // Calculator
 let productsInput = document.getElementById("products-number");
