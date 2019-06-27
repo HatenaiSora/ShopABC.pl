@@ -8,6 +8,7 @@ A modern-looking website with a price calculator
 ## Build with 
 * JavaScript
 * Sass
+* Gulp
 * HTML5
 
 ## Screen shots: 
